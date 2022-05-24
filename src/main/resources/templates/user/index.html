@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+<th:block >
+    <h1 th:if="${error}"></h1>
+</th:block>
+<h1 th:text="'Welcome ' + ${username}">Username Default</h1>
+<a th:href="@{/}">Spa Services</a>
+
+</body>
+</html>
